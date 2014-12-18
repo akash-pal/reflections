@@ -1,0 +1,60 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    diff basically compares two versions of a file; having two versions of a file
+    enables to correctly pinpoint the changes that are made in the newer version.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Having access to the entire history of a file enables programmers to restore 
+    changes that have been made; it also enables programmers to compare the files
+    and find the errors.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    pros: It is easier to make out the changes that have been made by whome, when
+          the changes have been made ; aslo a description about the commits gives 
+          a clear picture of the changes made.
+
+    cons: When the versions are automatically saved the programmer need not worry 
+          about making commits; and every small change is commited.    
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    If there are several interrelated files then making changes in one file is bound 
+    to have effects on other interrelated files; also changes could be made in more 
+    than one file  simulataneously; hence Git gives the provision of saving multiple 
+    files in one commit. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log : enables to viw the entie history of commits that have been made.
+              each commit has a commit id, author, date and a user defined description.
+              the latest commits are on top followed by the previous commit and so on.
+
+    git diff first_id second_id : enables to compare two commits by specifying the 
+                                  corresponding commit id's.
+                                  The output illustrates the changes that have been added
+                                  by a + sign and the changes that have deleted by a - sign.
+
+    git config --global color.ui auto : enables the output to be colored. 
+                                        The lines added are colored green and those that 
+                                        have been removed by red.
+                                        This helps to spot the changes quickely. 
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Due to version control, I am not worried about losing my works and I even have the 
+    option of moving backward and the forward. 
+    Version control also enables to pinpoint the errors. 
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I wish to collaborate and work on a project so that i may utilise the full
+    power of Git.  
