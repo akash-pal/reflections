@@ -1,37 +1,79 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-git init : used to initialize a repository
-           this command creates the resository as a hidden direrctory (.git)
-           it is needed for the purpose of tracking all the files that has been 
-           commited. 
-
-git status: gives the status of the untracted files i.e. those that are not 
-            commited. 
-
+    git init : used to initialize a repository
+               this command creates the resository as a hidden direrctory (.git)
+               it is needed for the purpose of tracking all the files that has been 
+               commited. 
+ 
+     git status: gives the status of the untracted files i.e. those that are not 
+                 commited. 
+ 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-The staging area is an intermediate area that lies between the working directory 
-and the repository. Our objective is to have small commits with one commit per 
-logical change. But instead of directly adding the files to the repository the 
-files are first added to the staging area. Later on the files in the staging area 
-are bundled together and then commited to the repository.  
-The staging area gives more control to the programmers; as they can bundle up
-specific files to be commited together. 
+    The staging area is an intermediate area that lies between the working directory 
+    and the repository. Our objective is to have small commits with one commit per 
+    logical change. But instead of directly adding the files to the repository the 
+    files are first added to the staging area. Later on the files in the staging area 
+    are bundled together and then commited to the repository. The staging area gives 
+    more control to the programmers; as they can commit the files together.
 
-git add filename: this adds the file with the corresponding file name to the 
-                  staging area.
+    git add filename: this adds the file with the corresponding file name to the 
+                      staging area.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+    The files are added to the staging area as and when desied by the programmer.
+    One logical change may compirse of changes to more than one file. These files 
+    can be added to the staging area. Later on; all these files can be commited 
+    togther and described by a single logical description.
+
+    git commit : moves the files from staging area to repository. 
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+    Usually commits are a linear sequence. It may comprise of changes such as fixing
+    bugs or adding new features or updating documents. However there might be situations
+    when an experimental change may be introduced or a slightly different version of the
+    present version may be introduced.Such a situation suffices the creation of a branch.
+
+    So that if these changes turned out to be unsuccessful then there would be a provision 
+    to get back as brances have labels; also there would be no affects on the original version
+    (i.e. master branch). Later on the branches could also be merged with the master branch 
+    if fruitful. 
+
 How do the diagrams help you visualize the branch structure?
+    
+    Diagrams representing branches gives a good and clear understanding about when the branches
+    take place ; the commits that take place after the branch. 
+    The diagram aslo describes the parent child relationship between commits.
+    In addition it gives a clear illustration of the commits reachable from the tip of the branches.
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+
+    Whenever two branches are merged ;all the commits in the branches are compared with the commits 
+    in the parent of the two branches.
+
+       The changes (i.e. both lines added & lines removed) that are common in both branches are retianed.
+
+       The lines in the parent that are removed by the first branch but retained by the second branch
+       are not included in the merged version. 
+
+       Similarly the lines in the parent that are removed by the second branch but retained by the 
+       first branch are also not included in the merged version. 
+
+       The lines that are added by the first or second branch and are not present in the parent are 
+       also included in the merged version.
+
+       All the changes that are included in the merged version are ordered using the timestamp of the 
+       changes that are made.
+
+    The diagrams are drawn to make out the master and the branch and as such ""the branch is merged into the master".
+
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
