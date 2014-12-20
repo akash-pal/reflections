@@ -22,3 +22,10 @@ Describe the differences between forks, clones, and branches. When would you use
   without the need of cloning on to the local machine  and then pushing the changes. 
   Fork aslo provides proper reference to the original user of the files.   
  
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+  Keeping track of the last known state of the remote stored locally enables to add the changes
+  that are made remotely. 
+  Suppose the user goes offline and makes changes locally; having a copy of the last known state
+  of the remote stored locally makes it possible for the user to merge the changes made locally
+  and the changes made remotely when the user get back online. 
