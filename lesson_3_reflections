@@ -29,3 +29,14 @@ What is the benefit of having a copy of the last known state of the remote store
   Suppose the user goes offline and makes changes locally; having a copy of the last known state
   of the remote stored locally makes it possible for the user to merge the changes made locally
   and the changes made remotely when the user get back online. 
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+  Apart from Git or GitHub other Version Control software can be used such as Dropbox or Google Drive.
+  These softwares would also enable to collaborate on a project.
+
+  It would not be easier as in Dropbox or Google Drive as there is no provision of finding out the
+  commits/changes made or who made the changes. It would not be easy to find out the conflicts.
+    
+  The only benefit is that the programmer need not worry about synchronizing the changes made;
+  it would be done automatically.  
