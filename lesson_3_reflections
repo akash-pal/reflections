@@ -9,4 +9,16 @@ up-to-date with your remote repository?
   Pulling chnages manually enables the programmers to sync both the local and reomte repository 
   only when thwy would want. Its gives more flexibilty to the users. 
 
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
+  Branches are used to make another version of the master on the local machine. 
+  Branches can be used mainly for making an experimental version or for trying out a
+  new feature.
+
+  Clones refers to copying the files from the remote to the local machine. 
+  or making another copy on the local machine itself. 
+
+  Forks are used to make a copy of the files on the remote (i.e. GitHub) itself; 
+  without the need of cloning on to the local machine  and then pushing the changes. 
+  Fork aslo provides proper reference to the original user of the files.   
+ 
