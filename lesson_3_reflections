@@ -1,4 +1,12 @@
 When would you want to use a remote repository rather than keeping all your work local?
 
-Especially when working from different computer remote repository would be greatly useful.
-And then the changes can be easily translated back to the local repository.  
+  Especially when working from different computer remote repository would be greatly useful.
+  And then the changes can be easily translated back to the local repository.  
+
+Why might you want to always pull changes manually rather than having Git automatically stay 
+up-to-date with your remote repository?
+
+  Pulling chnages manually enables the programmers to sync both the local and reomte repository 
+  only when thwy would want. Its gives more flexibilty to the users. 
+
+
