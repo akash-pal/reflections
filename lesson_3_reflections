@@ -40,3 +40,12 @@ How would you collaborate without using Git or GitHub? What would be easier, and
     
   The only benefit is that the programmer need not worry about synchronizing the changes made;
   it would be done automatically.  
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+  Working on a sepearte branch helps to make changes and experiment with it rather than affecting the master. 
+  Then these changes could be "pull requested" to the remote so that others collaborating on the project can
+  look into it and then merge into the master on the remote /  give suggestion and opinion about the changes. 
+
+
+
